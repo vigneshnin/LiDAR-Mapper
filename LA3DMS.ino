@@ -81,16 +81,6 @@ void loop() {
 //  buttonValue = analogRead(buttonPin);
 
   if (scanning) {
-/*    if (abs(buttonValue - 741) < buttonThreshold) {
-      if (!selectButtonPressed) {
-        // switch to manual scan mode
-        selectButtonPressed = true;
-        scanning = false;
-        updateModeDisplay();
-      }
-    } else {
-      selectButtonPressed = false;
-    } */
     if (scanDirection) {
       posX += scanIncrement;
     } else {
